@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Your name here" />
+<meta name="author" content="Olivia Delos" />
 
 
 <title>I have the best titles</title>
@@ -28,7 +28,7 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
@@ -369,7 +369,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">I have the best titles</h1>
 <h3 class="subtitle">Subtitle here if desired</h3>
-<h4 class="author">Your name here</h4>
+<h4 class="author">Olivia Delos</h4>
 
 </div>
 
@@ -401,6 +401,8 @@ div.tocify {
 <pre class="r"><code>library(tidyverse)
 library(leaflet)
 library(kableExtra)
+library(rmarkdown)
+library(knitr)
 knitr::opts_chunk$set(cache=TRUE)  # cache the results for quick compiling</code></pre>
 <div id="download-and-clean-all-required-data" class="section level2">
 <h2>Download and clean all required data</h2>
@@ -440,172 +442,172 @@ value
 <tbody>
 <tr>
 <td style="text-align:center;">
--175.18
+-103.21
 </td>
 <td style="text-align:center;">
--15.00
+18.36
 </td>
 <td style="text-align:center;">
-7.00
+15.72
 </td>
 <td style="text-align:center;">
-e
+b
 </td>
 <td style="text-align:center;">
-0.00
+0.40
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
--156.19
+-164.68
 </td>
 <td style="text-align:center;">
--14.14
+8.31
 </td>
 <td style="text-align:center;">
-5.67
+16.02
 </td>
 <td style="text-align:center;">
 a
 </td>
 <td style="text-align:center;">
-2.29
+0.24
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
-20.87
+-86.76
 </td>
 <td style="text-align:center;">
--47.94
+20.31
 </td>
 <td style="text-align:center;">
-18.75
-</td>
-<td style="text-align:center;">
-a
-</td>
-<td style="text-align:center;">
--1.37
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-97.13
-</td>
-<td style="text-align:center;">
-23.22
-</td>
-<td style="text-align:center;">
-10.47
+5.44
 </td>
 <td style="text-align:center;">
 d
 </td>
 <td style="text-align:center;">
--0.13
+0.28
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
--100.23
+-151.23
 </td>
 <td style="text-align:center;">
-12.01
+39.62
 </td>
 <td style="text-align:center;">
-5.14
+13.47
+</td>
+<td style="text-align:center;">
+b
+</td>
+<td style="text-align:center;">
+-0.60
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+9.74
+</td>
+<td style="text-align:center;">
+23.44
+</td>
+<td style="text-align:center;">
+17.22
+</td>
+<td style="text-align:center;">
+b
+</td>
+<td style="text-align:center;">
+-0.98
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+-132.48
+</td>
+<td style="text-align:center;">
+-54.95
+</td>
+<td style="text-align:center;">
+5.21
 </td>
 <td style="text-align:center;">
 c
 </td>
 <td style="text-align:center;">
--3.00
+-1.55
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
-121.34
+108.85
 </td>
 <td style="text-align:center;">
-59.66
+2.85
 </td>
 <td style="text-align:center;">
-18.39
-</td>
-<td style="text-align:center;">
-e
-</td>
-<td style="text-align:center;">
-1.97
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-66.38
-</td>
-<td style="text-align:center;">
--18.73
-</td>
-<td style="text-align:center;">
-9.35
+13.09
 </td>
 <td style="text-align:center;">
 d
 </td>
 <td style="text-align:center;">
-0.68
+0.45
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
--145.81
+95.41
 </td>
 <td style="text-align:center;">
--46.56
+-48.33
 </td>
 <td style="text-align:center;">
-11.57
+17.52
+</td>
+<td style="text-align:center;">
+d
+</td>
+<td style="text-align:center;">
+2.50
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+-22.03
+</td>
+<td style="text-align:center;">
+-3.10
+</td>
+<td style="text-align:center;">
+9.14
+</td>
+<td style="text-align:center;">
+c
+</td>
+<td style="text-align:center;">
+2.75
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+-39.64
+</td>
+<td style="text-align:center;">
+28.16
+</td>
+<td style="text-align:center;">
+5.35
 </td>
 <td style="text-align:center;">
 b
 </td>
 <td style="text-align:center;">
--0.34
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-159.17
-</td>
-<td style="text-align:center;">
-48.53
-</td>
-<td style="text-align:center;">
-14.99
-</td>
-<td style="text-align:center;">
-b
-</td>
-<td style="text-align:center;">
--2.23
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
--129.10
-</td>
-<td style="text-align:center;">
--59.74
-</td>
-<td style="text-align:center;">
-18.91
-</td>
-<td style="text-align:center;">
-b
-</td>
-<td style="text-align:center;">
--0.35
+0.80
 </td>
 </tr>
 </tbody>
@@ -618,11 +620,12 @@ b
 <p>Show tables, plots, etc. and describe them.</p>
 <pre class="r"><code>m &lt;- leaflet(data) %&gt;% 
   addTiles() %&gt;% 
-  addCircleMarkers(~x, ~y, radius = ~size,color=~category)
+  addCircleMarkers(~x, ~y, radius = ~size,color = ~as.factor(category)) %&gt;% 
+  addPopups(~x[2], ~y[2], &quot;Random popup&quot;)
 m  # a map with the default OSM tile layer</code></pre>
 <div class="figure">
-<div id="htmlwidget-6c3e8e4b364322b4c717" style="width:576px;height:288px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6c3e8e4b364322b4c717">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[-14.9990496318787,-14.1425578482449,-47.937785955146,23.2246373500675,12.0140750147402,59.6565782558173,-18.734748121351,-46.5595482755452,48.5311427805573,-59.7428968548775,-45.8097747992724,-17.9679116047919,11.8715448305011,37.8119112364948,-0.509222522377968,47.7842772938311,23.233160879463,-49.0173826832324,36.4987395331264,41.0007195733488],[-175.181908300146,-156.191962519661,20.8724004495889,97.1336986497045,-100.227176304907,121.344821602106,66.3847352284938,-145.814246395603,159.173704627901,-129.102302407846,68.3534577861428,5.6629135273397,115.466055460274,95.05245834589,107.708545736969,171.813281765208,154.443794991821,-43.0141758453101,-143.19836916402,86.8726778123528],[6.99775445973501,5.67242127144709,18.7510148261208,10.4654943244532,5.14062191476114,18.3901090046857,9.35100446688011,11.5656995680183,14.9926926929038,18.9147341717035,19.1231192438863,17.9559715325013,5.70121329394169,9.68357505858876,17.2650242608506,9.21331325662322,7.71976947551593,9.28765372140333,16.8878742691595,13.8479006558191],null,null,{"interactive":true,"className":"","stroke":true,"color":["e","a","a","d","c","e","d","b","b","b","a","e","b","e","e","a","b","c","d","a"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["e","a","a","d","c","e","d","b","b","b","a","e","b","e","e","a","b","c","d","a"],"fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-59.7428968548775,59.6565782558173],"lng":[-175.181908300146,171.813281765208]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-746a3d6a4d208840aa28" style="width:576px;height:288px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-746a3d6a4d208840aa28">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[18.3553757239133,8.30954804085195,20.313621070236,39.6203602664173,23.4429103787988,-54.945127107203,2.84913634881377,-48.3336065802723,-3.09803537093103,28.1629406567663,28.973947679624,-11.0866861604154,-40.7863388210535,-26.4291108492762,37.9012651741505,14.6565162856132,34.2712815664709,16.7425129562616,49.8672276735306,53.4171365294605],[-103.207626258954,-164.676582310349,-86.7561672627926,-151.233134474605,9.73594430834055,-132.475600596517,108.854365227744,95.4125501867384,-22.0323063991964,-39.6378257218748,-74.6712168026716,28.9972112048417,-165.379474880174,137.132558422163,70.7303072791547,-8.56309980154037,-115.390886971727,164.708037665114,-99.8996760696173,127.555116070434],[15.715521692764,16.0211728629656,5.43718231725506,13.4654338657856,17.2220287122764,5.21447792300023,13.0939961515833,17.5222072191536,9.13957377430052,5.35099218133837,15.2390205347911,11.9301746727433,9.87402438768186,16.8260978092439,9.49064871645533,15.2816262061242,13.8989428838249,6.55723058851436,16.5796044911258,17.487103221938],null,null,{"interactive":true,"className":"","stroke":true,"color":["b","a","d","b","b","c","d","d","c","b","a","d","d","b","b","a","b","a","c","d"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["b","a","d","b","b","c","d","d","c","b","a","d","d","b","b","a","b","a","c","d"],"fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPopups","args":[8.30954804085195,-164.676582310349,"Random popup",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"limits":{"lat":[-54.945127107203,53.4171365294605],"lng":[-165.379474880174,164.708037665114]}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Map of completely random data
 </p>
