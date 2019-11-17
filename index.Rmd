@@ -5,10 +5,10 @@ author: Olivia Delos
 subtitle: Subtitle here if desired
 ---
 
-# Introduction
+# Introduction Change the title
 My really awesome and complete introduction will go here.  
 
-# Materials and methods
+# Materials and methods put here your method and material
 
 Narrative and most code will go here.  Describe what you are doing and show how to do it (with code).
 
@@ -65,7 +65,7 @@ data %>%
 
 Add any additional processing steps here.
 
-# Results
+# Results your own results
 
 Show tables, plots, etc. and describe them.
 
@@ -84,7 +84,7 @@ data %>%
   geom_point()
 ```
 
-# Conclusions
+# Conclusions your own conclusion
 
 What have you learned?  Are there any broader implications?
 
